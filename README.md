@@ -1,6 +1,6 @@
-# Project Title
+# Squirrel Tracker
 
-Squirrel Tracker
+A tracker that can track squirrel locations around the central park.
 
 ## Getting Started
 
@@ -13,8 +13,12 @@ What things you need to install the software and how to install them
 ```
 pip install -U pip
 pip install Django
-
 ```
+### Features
+
+* A map app to locate squirrels on Leaflet OpenStreetMaps
+* A sightings app to add and edit squirrels
+* A Stats page to show aggregate statistics
 
 ### Group Name and Section
 
