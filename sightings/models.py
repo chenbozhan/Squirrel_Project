@@ -30,7 +30,7 @@ class Squirrel(models.Model):
             choices=Shift_Choices,
      )
 
-    Date = models.DateTimeField(
+    Date = models.DateField(
             help_text=_('Concatenation of the sighting session day and month.'),
      )
 
