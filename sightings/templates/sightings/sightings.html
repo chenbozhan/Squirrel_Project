@@ -1,0 +1,12 @@
+{% if sq %}
+<ul>
+  <li><a href="/add/">{{ add }}</li>
+  {% for s in sq %}
+  <li><a href="/sightings/{{ s.Unique_Squirrel_ID }}/">{{ s.Unique_Squirrel_ID }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+  <p>No available squirrels</p>
+{% endif %}
+
+
