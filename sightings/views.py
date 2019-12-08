@@ -9,13 +9,11 @@ def homepage(request):
     sightings = 'Sightings'
     add = 'Add'
     stats = 'Stats'
-    surprise = 'Check it out!'
     context = {
         'maps': maps,
         'sightings': sightings,
         'add': add,
         'stats': stats,
-        'surprise': surprise,
     }
     return render(request, 'sightings/homepage.html', context)
 
@@ -29,9 +27,9 @@ def sightings(request):
     return render(request, 'sightings/sightings.html', context)
 
 def map(request):
-    sig = Squirrel.objects.all()
+    sightings = Squirrel.objects.all()
     context = {
-        'sig': sig,
+        'sightings': sightings,
     }
     return render(request, 'sightings/map.html', context)
 

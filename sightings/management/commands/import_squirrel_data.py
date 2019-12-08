@@ -2,6 +2,8 @@ import csv
 from django.core.management.base import BaseCommand
 from sightings.models import Squirrel
 from datetime import datetime
+from django.utils import timezone
+import pytz
 
 class Command(BaseCommand):
     def add_arguments(self, parser):
@@ -39,7 +41,7 @@ class Command(BaseCommand):
                 Longitude=item['X'],
                 Unique_Squirrel_ID=item['Unique Squirrel ID'],
                 Shift=item['Shift'],
-                Date=datetime.strptime(item['Date'], '%m%d%Y'),
+                Date=pytz.timezone('UTC').localize(datetime.strptime(item['Date'], '%m%d%Y')),
                 Age=item['Age'],
                 Primary_Fur_Color=item['Primary Fur Color'],
                 Location=item['Location'],
