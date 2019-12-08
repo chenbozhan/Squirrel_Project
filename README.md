@@ -28,3 +28,8 @@ Project Group 56, Section 1
 ### UNI for Each Member on the Team
 
 UNIs: [bc2868, dh2987]
+
+### Link to the server running the application
+https://tools-vm.appspot.com
+
+
