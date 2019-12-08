@@ -1,7 +1,6 @@
 # Squirrel Tracker
 
-A tracker that can track squirrels' locations and their detailed information around the centr
-al park.
+A tracker that can track squirrels' locations and their information around the central park.
 
 ## Getting Started
 
