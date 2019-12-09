@@ -1,6 +1,6 @@
 {% if sq %}
 <ul>
-	<li><a href="/add/">{{ add }}</a></li>
+	<li><a href="/sightings/add/">{{ add }}</a></li>
   {% for s in sq %}
   <li><a href="/sightings/{{ s.Unique_Squirrel_ID }}/">{{ s.Unique_Squirrel_ID }}</a></li>
   {% endfor %}
